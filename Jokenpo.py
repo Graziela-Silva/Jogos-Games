@@ -7,7 +7,7 @@ usuario = str(input('Sua escolha: ')).lower().strip()
 
 while usuario != 'pedra' and usuario != 'papel' and usuario != 'tesoura':
     print('No jokenpô as opções de escolha são apenas: Pedra, Papel ou Tesoura')
-    usuario = str(input('Escolha uma opção válida: ')).lower()
+    usuario = str(input('Escolha uma opção válida: ')).lower().strip()
 if computador == usuario:
     print('\nPensamos igual!! \nO jogo deu Empate!')
     print(f'Eu escolhi: {computador} \nVocê escolheu: {usuario}')
