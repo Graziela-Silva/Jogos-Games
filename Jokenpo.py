@@ -3,7 +3,7 @@ print('*'*25)
 print('Vamos jogar jokenpô!!')
 opcoes = ['Pedra','Papel','Tesoura']
 computador = random.choice(opcoes).lower()
-usuario = str(input('Sua escolha: ')).lower()
+usuario = str(input('Sua escolha: ')).lower().strip()
 
 while usuario != 'pedra' and usuario != 'papel' and usuario != 'tesoura':
     print('No jokenpô as opções de escolha são apenas: Pedra, Papel ou Tesoura')
